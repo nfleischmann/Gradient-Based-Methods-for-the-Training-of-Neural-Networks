@@ -32,7 +32,7 @@ So, if local minima tend to have a similar loss to the global minimum, why bothe
 
 ### Stochastic Gradient Descent behaves similar to Gradient Descent
 
-So far, we assumed that we can simply throw gradient descent at the optimization problem. Unfortunately, the loss function depends on every sample in our dataset, meaning we need the entire dataset in memory for just one evaluation of the loss. This quickly becomes prohibitive for larger datasets.
+So far, we assumed that we can simply throw gradient descent at the optimization problem. Unfortunately, the loss function depends on every sample in our dataset, meaning we need the entire dataset in memory for just one evaluation of the loss function. This quickly becomes prohibitive for larger datasets.
 
 - To address this, we randomly select a subset of training examples and compute the loss and its gradient based only on this subset. This approach provides an unbiased estimate of the gradient, which we can use in place of the true gradient. This leads us to the stochastic gradient descent (SGD) algorithm, which is widely used to train neural networks.
 - The first result we find is that using stochastic gradient descent with a fixed step size will, on average, bring us to a point where the gradient is close to zero (likely near a saddle point). The smaller the step size, the smaller the gradient will be.
