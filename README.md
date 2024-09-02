@@ -1,3 +1,5 @@
+![Alt text](assets/stochastic_gradient_descent.png)
+
 # Gradient-Based Methods for the Training of Neural Networks
 
 This repository contains the work from my bachelor’s thesis, completed under the supervision of [Professor Karsten Urban](https://www.uni-ulm.de/mawi/institut-fuer-numerische-mathematik/institut/mitarbeiter/prof-dr-karsten-urban/) at the Institute of Numerical Mathematics, Ulm University. This thesis was my first experience working with neural networks, and it helped me build a solid foundation for my Master’s in Data Science, for which I am very grateful. In the following, I want to give a brief overview over my work.
@@ -6,8 +8,6 @@ This repository contains the work from my bachelor’s thesis, completed under t
 Specializing in numerical mathematics and mathematical optimization during my bachelor’s, I came from a world where most optimization problems were convex and therefore had a unique solution. This typically even allowed for deriving bounds on how quickly certain optimization algorithms would converge to that solution. I was surprised to learn that the crucial problem of optimizing neural networks lacked these favorable properties I was accustomed to. Moreover, we have little understanding of the loss landscape, and due to the sheer dimensionality of the problem, we are essentially limited to using simple first-order optimization algorithms, such as gradient descent.
 
 Yet, despite the lack of all these guarantees, it simply seems to work in practice. The fact that neural networks can be trained reasonably reliably and that the loss decreases with well-chosen parameters is one of the reasons for the AI revolution we are currently witnessing. In my work, I have attempted to gather several possible explanations for this phenomenon and conducted some experiments to better understand the problem.
-
-![Alt text](assets/stochastic_gradient_descent.png)
 
 ### Properties of the Optimization Problem
 
@@ -47,6 +47,6 @@ As shown in the plot below, the function values of the local minima become incre
 
 ![Alt text](assets/experiment_1.png)
 
-- In my third experiment, I revisited the result related to stochastic gradient descent, which states that after a certain number of iterations, the algorithm is expected to reach a point where the gradient is close to zero, and further, the expected norm of that gradient is proportional to the step size. This means that if a smaller step size is chosen, after some number of iterations, we are more expected to end up at points with lower gradient norms (“closer to a saddle point”). As to be expected, I was able to observe the theoretical result in practice using the MNIST classification problem.
+In my third experiment, I revisited the result related to stochastic gradient descent, which states that after a certain number of iterations, the algorithm is expected to reach a point where the gradient is close to zero, and further, the expected norm of that gradient is proportional to the step size. This means that if a smaller step size is chosen, after some number of iterations, we are more expected to end up at points with lower gradient norms (“closer to a saddle point”). As to be expected, I was able to observe the theoretical result in practice using the MNIST classification problem.
 
 ![Alt text](assets/experiment_3.png)
