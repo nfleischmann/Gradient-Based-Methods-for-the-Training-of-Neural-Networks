@@ -7,7 +7,7 @@ This repository contains the work from my bachelor’s thesis, completed under t
 ### Motivation
 Specializing in numerical mathematics and mathematical optimization during my bachelor’s, I came from a world where most optimization problems were convex and therefore had a unique solution. This typically even allowed for deriving bounds on how quickly certain optimization algorithms would converge to that solution. I was surprised to learn that the crucial problem of optimizing neural networks lacked these favorable properties I was accustomed to. Moreover, we have little understanding of the loss landscape, and due to the sheer dimensionality of the problem, we are essentially limited to using simple first-order optimization algorithms, such as gradient descent.
 
-Yet, despite the lack of all these guarantees, it simply seems to work in practice. The fact that neural networks can be trained reasonably reliably and that the loss decreases with well-chosen parameters is one of the reasons for the AI revolution we are currently witnessing. In my work, I have attempted to gather several possible explanations for this phenomenon and conducted some experiments to better understand the problem.
+Yet, despite the lack of all these guarantees, it simply seems to work in practice. The fact that neural networks can be trained reasonably reliably is one of the reasons for the AI revolution we are currently witnessing. In my work, I have attempted to gather several possible explanations for this phenomenon and conducted some experiments to better understand the problem.
 
 ### Properties of the Optimization Problem
 
