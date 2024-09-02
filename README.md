@@ -1,8 +1,8 @@
-![Alt text](assets/stochastic_gradient_descent.png)
-
 # Gradient-Based Methods for the Training of Neural Networks
 
 This repository contains the work from my bachelor’s thesis, completed under the supervision of [Professor Karsten Urban](https://www.uni-ulm.de/mawi/institut-fuer-numerische-mathematik/institut/mitarbeiter/prof-dr-karsten-urban/) at the Institute of Numerical Mathematics, Ulm University. This thesis was my first experience working with neural networks, and it helped me build a solid foundation for my Master’s in Data Science, for which I am very grateful. In the following, I want to give a brief overview over my work.
+
+![Alt text](assets/stochastic_gradient_descent.png)
 
 ### Motivation
 Specializing in numerical mathematics and mathematical optimization during my bachelor’s, I came from a world where most optimization problems were convex and therefore had a unique solution. This typically even allowed for deriving bounds on how quickly certain optimization algorithms would converge to that solution. I was surprised to learn that the crucial problem of optimizing neural networks lacked these favorable properties I was accustomed to. Moreover, we have little understanding of the loss landscape, and due to the sheer dimensionality of the problem, we are essentially limited to using simple first-order optimization algorithms, such as gradient descent.
