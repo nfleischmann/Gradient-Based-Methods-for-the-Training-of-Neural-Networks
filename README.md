@@ -22,7 +22,7 @@ One of the nightmares that mathematicians like me face when optimizing non-conve
 - [Soudry and Carmon](https://arxiv.org/abs/1605.08361) offer additional evidence against bad local minima. For a common class of neural networks, they show that if the network is made sufficiently wide, there are no local minima that are not also global minima.
 - Finally, I considered some experimental evidence by [Dauphin et al.](https://arxiv.org/abs/1406.2572), who found that the Hessian matrix of the objective function tends to have more positive eigenvalues at stationary points with lower costs. Since a local minimum is characterized as a point where the Hessian has only positive eigenvalues, this suggests that stationary points with high errors are more likely to be saddle points, whereas local minima tend to have low errors.
 
-### Gradient Descent converges (almost surely) against a Local Minimum
+### Gradient Descent converges (almost surely) against local Minima
 
 So, if local minima tend to have a similar loss to the global minimum, why bother chasing the global minimum? Just show me how to end up in a local one! Well, it’s not quite that simple, but we’ll get there.
 
