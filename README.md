@@ -30,7 +30,7 @@ So, if local minima tend to have a similar loss to the global minimum, why bothe
 - This enables us to apply gradient descent to this problem. A basic result taught in every optimization class is that if the loss function is sufficiently smooth and the step size is small enough, gradient descent will converge to a critical point, which could be a local minimum, maximum, or saddle point.
 - While local minima are certainly one type of critical point, local maxima are another. If we’re unlucky and start at a local maximum (where the gradient is zero) or accidentally step into one, we won’t be able to escape it—there’s nothing we can do about that. But can we at least say that this is unlikely to happen?  A recent paper by [Lee et al](https://arxiv.org/abs/1602.04915) provides exactly that reassurance. Under mild conditions on the loss function, they show that if the initial point is chosen randomly, the probability of converging to a saddle point with a strictly negative curvature in at least one direction is zero.
 
-### Stochastic Gradient Descent behaves similar as Gradient Descent
+### Stochastic Gradient Descent behaves similar to Gradient Descent
 
 So far, we assumed that we can simply throw gradient descent at the optimization problem. Unfortunately, the loss function depends on every sample in our dataset, meaning we need the entire dataset in memory for just one evaluation of the loss. This quickly becomes prohibitive for larger datasets.
 
