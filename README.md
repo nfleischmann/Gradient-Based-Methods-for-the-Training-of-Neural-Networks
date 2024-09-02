@@ -1,6 +1,6 @@
 # Gradient-Based Methods for the Training of Neural Networks
 
-This repository contains the work from my bachelor’s thesis, completed under the supervision of [Professor Karsten Urban](https://www.uni-ulm.de/mawi/institut-fuer-numerische-mathematik/institut/mitarbeiter/prof-dr-karsten-urban/) at the Institute of Numerical Mathematics, Ulm University. This thesis was my first experience working with neural networks, and it helped me build a solid foundation for my Master’s in Data Science, for which I am very grateful. In the following, I want to give a brief overview over my work.
+This repository contains the work from my bachelor’s thesis, completed under the supervision of [Professor Karsten Urban](https://www.uni-ulm.de/mawi/institut-fuer-numerische-mathematik/institut/mitarbeiter/prof-dr-karsten-urban/) at the Institute of Numerical Mathematics at Ulm University. This thesis was my first experience working with neural networks, and it helped me build a solid foundation for my Master’s in Data Science, for which I am very grateful. In the following, I want to give a brief overview over my work.
 
 ![Alt text](assets/stochastic_gradient_descent.png)
 
