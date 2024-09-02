@@ -9,9 +9,6 @@ Specializing in numerical mathematics and mathematical optimization during my ba
 
 Yet, despite the lack of all these guarantees, it simply seems to work in practice. The fact that neural networks can be trained reasonably reliably is one of the reasons for the AI revolution we are currently witnessing. In my work, I have attempted to gather several possible explanations for this phenomenon and conducted some experiments to better understand the problem.
 
-## Properties of the Optimization Problem
-
-First, I derived the optimization problem underlying neural networks. By applying the chain rule, it becomes fairly easy to see that - for common choices of activation functions - the loss function is sufficiently smooth (except for a negligible set of points) and bounded from below. This justifies the use of first-order optimization algorithms, such as gradient descent.
 
 ## The Loss Landscape has (almost) no bad local Minima
 
